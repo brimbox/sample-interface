@@ -34,6 +34,6 @@ If not, see http://www.gnu.org/licenses/
 $array = array();
 $array[] = array('interface_type'=>'Standard','usertypes'=>array(1),'module_type'=>1);
 $array[] = array('interface_type'=>'Auxiliary','usertypes'=>array(1),'module_type'=>2,'friendly_name'=>'Extras');
-$array_globals['bb_sample']['interface'] = $array;
+$array_global['bb_sample']['interface'] = $array;
 unset($array);
 ?>
