@@ -1,3 +1,4 @@
+<?php if (!defined('BASE_CHECK')) exit(); ?>
 <?php
 /*
  * Copyright (C) Brimbox LLC
@@ -15,16 +16,16 @@
  * If not, see http://www.gnu.org/licenses/
  */
 
-/* SETUP TEMPLATE CALLED TEMPLATE FOR SAMPLE INTERFACE */
-/* The below is the minimum header needed to install a module */
+/* SAMPLE TEMPLATE CALLED TEMPLATE FOR SAMPLE INTERFACE */
+
 /*
-	@module_name = bb_sample_template;
-	@friendly_name = Template;
-	@interface = bb_sample;
-	@module_type = 1;
-	@module_version = 2.0;
-	@description = This is the Template tab of the sample interface.;
- */
+@module_name = bb_sample_template;
+@friendly_name = Template;
+@interface = bb_sample;
+@module_type = 1;
+@module_version = 2.0;
+@description = This is the Template tab of the sample interface.;
+*/
 ?>
 <?php
 // it is good idea to check the permission
@@ -42,6 +43,8 @@ $sample = $main->process ( 'sample', $module, $arr_state, "" );
 
 // update state, back to db
 $main->update ( $con, $module, $arr_state );
+
+echo "<br><p class=\"message spaced larger\">Variable Output: <span class=\"bold\">" . $sample . "</span></p>";
 
 /* MODULE OUTPUT */
 echo "<br>";

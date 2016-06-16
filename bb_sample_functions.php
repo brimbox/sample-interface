@@ -17,23 +17,23 @@
  * If not, see http://www.gnu.org/licenses/
  */
 
-/* MODULE TEMPLATE */
-/* The below is the minimum header needed to install a module */
+/* FUNCTIONS FOR SAMPLE INTERFACE */
+
 /*
-	@module_name = bb_sample_functions;
-	@friendly_name = Sample Function;
-	@interface = bb_sample;
-	@module_type = -1;
-	@module_version = 2.0;
-	@description = This is the Hook Include of the sample interface.;
- */
+@module_name = bb_sample_functions;
+@friendly_name = Sample Function;
+@interface = bb_sample;
+@module_type = -1;
+@module_version = 2.0;
+@description = This is the Hook Include of the sample interface.;
+*/
 ?>
 <?php
 // INTERFACE DECLARATION #
 // You should declare an interface name
 $main->add_value ( 'header', array (
 		'name' => "Sample",
-		'controller' => "/box.php" 
+		'controller' => "/bb-box/bb_box.php" 
 ), 'bb_sample' );
 
 /* INTERFACE DEFINTION */
@@ -84,10 +84,7 @@ $main->add_value ( 'security', array (
 ), 'column_security' );
 // GUEST INDEX #
 // guest index will include column securities 0 and 1
-$main->add_value ( 'security', array (
-		0,
-		1 
-), 'guest_index' );
+$main->add_value ( 'security', array (0,1), 'guest_index' );
 
 // CUSTOM DATA VALIDATION TYPE
 // one type added on with function in function module

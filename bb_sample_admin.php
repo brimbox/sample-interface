@@ -1,3 +1,4 @@
+<?php if (!defined('BASE_CHECK')) exit(); ?>
 <?php
 /*
  * Copyright (C) Brimbox LLC
@@ -16,15 +17,15 @@
  */
 
 /* ADMIN TEMPLATE FOR SAMPLE INTERFACE */
-/* The below is the minimum header needed to install a module */
+
 /*
-	@module_name = bb_sample_admin;
-	@friendly_name = Admin;
-	@interface = bb_sample;
-	@module_type = 2;
-	@module_version = 2.0;
-	@description = This is the Admin button of the sample interface.;
- */
+@module_name = bb_sample_admin;
+@friendly_name = Admin;
+@interface = bb_sample;
+@module_type = 2;
+@module_version = 2.0;
+@description = This is the Admin button of the sample interface.;
+*/
 ?>
 <?php
 // it is good idea to check the permission

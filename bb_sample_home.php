@@ -1,3 +1,4 @@
+<?php if (!defined('BASE_CHECK')) exit(); ?>
 <?php
 /*
  * Copyright (C) Brimbox LLC
@@ -15,16 +16,16 @@
  * If not, see http://www.gnu.org/licenses/
  */
 
-/* MODULE TEMPLATE */
-/* The below is the minimum header needed to install a module */
+/* HOME MODULE TEMPLATE */
+
 /*
-	@module_name = bb_sample_home;
-	@friendly_name = Home;
-	@interface = bb_sample;
-	@module_type = 1;
-	@module_version = 2.0;
-	@description = This is the Sample tab of the sample interface.;
- */
+@module_name = bb_sample_home;
+@friendly_name = Home;
+@interface = bb_sample;
+@module_type = 1;
+@module_version = 2.0;
+@description = This is the Sample tab of the sample interface.;
+*/
 ?>
 <?php
 // it is good idea to check the permission
