@@ -56,7 +56,8 @@ $main->add_action ( 'interface', 'bb_sample', array (
 /* ADD USERROLE */
 // this will add the userrole
 $main->add_value ( 'userroles', array (
-		'name' => 'Sample' 
+		'name' => 'Sample',
+        'home' => 'bb_sample_home'
 ), '1_bb_sample' );
 
 // CUSTOM SECURITY
