@@ -35,10 +35,6 @@ $main->check_permission ( "1_bb_sample" );
 $POST = $main->retrieve ( $con );
 
 /* DATABASE STATS */
-echo "<div class=\"floatright\">";
-$main->logout_link ();
-echo "</div>";
-
 echo "<div class=\"floatleft\">";
 $main->database_stats ();
 $main->archive_link ();
