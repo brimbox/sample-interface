@@ -23,7 +23,7 @@
 @friendly_name = Admin;
 @interface = bb_sample;
 @module_type = 2;
-@module_version = 2.0;
+@module_version = 2.3;
 @description = This is the Admin button of the sample interface.;
 */
 ?>

@@ -24,7 +24,7 @@
 @friendly_name = Sample Function;
 @interface = bb_sample;
 @module_type = -1;
-@module_version = 2.0;
+@module_version = 2.3;
 @description = This is the Hook Include of the sample interface.;
 */
 ?>
