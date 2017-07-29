@@ -34,18 +34,18 @@
 $main->add_value ( 'header', array (
 		'name' => "Sample",
 		'controller' => "/bb-box/bb_box.php" 
-), 'bb_sample' );
+), 'bb_sample');
 
 /* INTERFACE DEFINTION */
 // this define the standard controller layout
-$main->add_action ( 'interface', 'bb_sample', array (
+$main->add_array ( 'interface', 'bb_sample', array (
 		'interface_type' => 'Standard',
 		'userroles' => array (
 				'1_bb_sample' 
 		),
 		'module_type_name' => 'Addon' 
 ), 1 );
-$main->add_action ( 'interface', 'bb_sample', array (
+$main->add_array ( 'interface', 'bb_sample', array (
 		'interface_type' => 'Auxiliary',
 		'userroles' => array (
 				'1_bb_sample' 
@@ -58,7 +58,7 @@ $main->add_action ( 'interface', 'bb_sample', array (
 $main->add_value ( 'userroles', array (
 		'name' => 'Sample',
         'home' => 'bb_sample_home'
-), '1_bb_sample' );
+) , '1_bb_sample');
 
 // CUSTOM SECURITY
 // will overwrite default values

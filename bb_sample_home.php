@@ -36,10 +36,7 @@ $POST = $main->retrieve ( $con );
 
 /* DATABASE STATS */
 echo "<div class=\"floatleft\">";
-$main->database_stats ();
-$main->archive_link ();
-echo "<br>";
-$main->userrole_switch ();
+$main->infolinks ();
 echo "</div>";
 echo "<div class=\"clear\"></div>";
 
